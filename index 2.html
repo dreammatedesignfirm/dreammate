@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Professional MEP & Civil Design Consultancy Firm" />
+  <title>DreamMate Design Consultancy</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+      url('https://images.unsplash.com/photo-1600573472590-34d68b46f8b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+    }
+  </style>
+</head>
+<body class="text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow-md fixed w-full z-50">
+    <div class="max-w-7xl mx-auto flex items-center justify-between p-4">
+      <!-- Logo with text -->
+      <div class="flex items-center space-x-3">
+        <img src="logo.jpg" alt="Dream Mate Logo" class="h-10 w-auto">
+        <div class="text-2xl font-bold text-blue-700">Dream Mate</div>
+      </div>
+      <nav class="hidden md:flex space-x-6 font-medium">
+        <a href="#services" class="hover:text-blue-700">Services</a>
+        <a href="#about" class="hover:text-blue-700">About</a>
+        <a href="#projects" class="hover:text-blue-700">Projects</a>
+        <a href="#contact" class="hover:text-blue-700">Contact</a>
+      </nav>
+      <button class="md:hidden flex items-center text-gray-800" id="menu-btn">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+             viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round"
+                d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden bg-white shadow-lg">
+      <a href="#services" class="block px-4 py-2 hover:bg-gray-100">Services</a>
+      <a href="#about" class="block px-4 py-2 hover:bg-gray-100">About</a>
+      <a href="#projects" class="block px-4 py-2 hover:bg-gray-100">Projects</a>
+      <a href="#contact" class="block px-4 py-2 hover:bg-gray-100">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero h-screen flex items-center justify-center text-center text-white">
+    <div>
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">Professional MEP & Civil Design Consultancy</h1>
+      <p class="text-lg md:text-xl mb-6">Innovative, Sustainable & Cost-Effective Engineering Solutions</p>
+      <a href="#contact" class="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg text-white font-semibold">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-10">Our Services</h2>
+      <div class="grid md:grid-cols-3 gap-8 px-4">
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-4 text-blue-700">MEP Design</h3>
+          <p>We provide high-quality Mechanical, Electrical & Plumbing (MEP) design solutions tailored to your project’s needs.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-4 text-blue-700">Civil Engineering</h3>
+          <p>Comprehensive civil engineering services for residential, commercial, and industrial developments.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-4 text-blue-700">Project Management</h3>
+          <p>Professional project management ensuring timely delivery, budget control, and quality standards.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
+      <img src="https://images.unsplash.com/photo-1523293836414-769b6ab3893c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="About Us" class="rounded-xl shadow-lg">
+      <div>
+        <h2 class="text-3xl font-bold mb-4">About Our Firm</h2>
+        <p class="mb-4">We are a team of passionate engineers and designers committed to delivering cutting-edge MEP & Civil design solutions. Our approach integrates sustainability, innovation, and cost-effectiveness to meet our clients’ goals.</p>
+        <a href="#contact" class="inline-block px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg text-white font-semibold">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-10">Our Projects</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="rounded-xl overflow-hidden shadow hover:shadow-lg transition">
+          <img src="https://images.unsplash.com/photo-1529421308411-756dc66c7dc1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="" class="w-full h-56 object-cover">
+          <div class="p-4">
+            <h3 class="font-semibold text-blue-700">Commercial Complex</h3>
+          </div>
+        </div>
+        <div class="rounded-xl overflow-hidden shadow hover:shadow-lg transition">
+          <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="" class="w-full h-56 object-cover">
+          <div class="p-4">
+            <h3 class="font-semibold text-blue-700">Residential Project</h3>
+          </div>
+        </div>
+        <div class="rounded-xl overflow-hidden shadow hover:shadow-lg transition">
+          <img src="https://images.unsplash.com/photo-1597593762073-cd4b3fd22a4c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="" class="w-full h-56 object-cover">
+          <div class="p-4">
+            <h3 class="font-semibold text-blue-700">Industrial Facility</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16">
+    <div class="max-w-4xl mx-auto text-center px-4">
+      <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
+      <p class="mb-8">Have a project in mind? Let’s work together to make it a reality.</p>
+      
+      <!-- Contact details -->
+      <div class="bg-gray-100 rounded-xl p-6 max-w-md mx-auto shadow-md">
+        <p class="font-semibold text-lg text-blue-700 mb-2">Eng. Sameera Bandara</p>
+        <p class="mb-1">Phone: <a href="tel:0774022347" class="text-blue-600 hover:underline">0774022347</a></p>
+        <p>Email: <a href="mailto:dreammate2020@gmail.com" class="text-blue-600 hover:underline">dreammate2020@gmail.com</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-6">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+      <p>&copy; 2025 Dream Mate. All rights reserved.</p>
+      <div class="flex space-x-4 mt-4 md:mt-0">
+        <a href="#" class="hover:text-white">LinkedIn</a>
+        <a href="#" class="hover:text-white">Facebook</a>
+        <a href="#" class="hover:text-white">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Menu Toggle Script -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
