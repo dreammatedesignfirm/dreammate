@@ -62,6 +62,27 @@
     </div>
   </section>
 
+  <!-- Image Slider Section -->
+<section class="relative w-full max-w-6xl mx-auto mt-12 overflow-hidden rounded-xl shadow-lg">
+  <!-- Slider container -->
+  <div id="slider" class="flex transition-transform duration-700 ease-in-out">
+    <img src="photo1.jpg" class="w-full object-cover" alt="Slide 1">
+    <img src="photo2.jpg" class="w-full object-cover" alt="Slide 2">
+    <img src="photo3.jpg" class="w-full object-cover" alt="Slide 3">
+    <img src="photo4.jpg" class="w-full object-cover" alt="Slide 4">
+    <img src="photo5.jpg" class="w-full object-cover" alt="Slide 5">
+    <img src="photo6.jpg" class="w-full object-cover" alt="Slide 6">
+    <img src="photo7.jpg" class="w-full object-cover" alt="Slide 7">
+    <img src="photo8.jpg" class="w-full object-cover" alt="Slide 8">
+    <img src="photo9.jpg" class="w-full object-cover" alt="Slide 9">
+    <img src="photo10.jpg" class="w-full object-cover" alt="Slide 10">
+  </div>
+
+  <!-- Navigation buttons -->
+  <button id="prev" class="absolute left-4 top-1/2 -translate-y-1/2 bg-gray-800 text-white px-3 py-2 rounded-full hover:bg-gray-700">‹</button>
+  <button id="next" class="absolute right-4 top-1/2 -translate-y-1/2 bg-gray-800 text-white px-3 py-2 rounded-full hover:bg-gray-700">›</button>
+</section>
+
   <!-- Services Section -->
   <section id="services" class="py-16 bg-gray-50">
     <div class="max-w-7xl mx-auto text-center">
@@ -157,9 +178,35 @@
       mobileMenu.classList.toggle('hidden');
     });
   </script>
+<script>
+  const slider = document.getElementById("slider");
+  const slides = slider.children.length;
+  let index = 0;
 
+  function showSlide(i) {
+    slider.style.transform = `translateX(-${i * 100}%)`;
+  }
+
+  document.getElementById("next").addEventListener("click", () => {
+    index = (index + 1) % slides;
+    showSlide(index);
+  });
+
+  document.getElementById("prev").addEventListener("click", () => {
+    index = (index - 1 + slides) % slides;
+    showSlide(index);
+  });
+
+  // Auto slide every 5 seconds
+  setInterval(() => {
+    index = (index + 1) % slides;
+    showSlide(index);
+  }, 5000);
+</script>
+  
 </body>
 </html>
+
 
 
 
